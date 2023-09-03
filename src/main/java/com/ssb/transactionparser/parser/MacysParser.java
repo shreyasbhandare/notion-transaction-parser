@@ -58,7 +58,7 @@ public class MacysParser implements TransactionParser {
 
                         Date transactionDate = new SimpleDateFormat(DATE_FORMAT_MMDDYYYY).parse(dateStr);
                         float transactionAmount = Float.parseFloat(amountStr) * (-1);
-                        String transactionCategory = JabaConstants.Category.CLOTHES.toString(); //TODO: Change this to extract category from description
+                        String transactionCategory = JabaConstants.Category.CLOTHES.getDescription(); //TODO: Change this to extract category from description
                         String transactionAccount = JabaConstants.Account.MACYS.getDescription();
 
                         notionClientWrapper.writeToNotion(new Transaction(description, transactionCategory, transactionAccount,
