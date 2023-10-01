@@ -110,6 +110,10 @@ public class CategoryFinderUtil {
             return Category.PAYCHECK.getDescription();
         }
 
+        if(StringUtils.containsIgnoreCase(description, "Gamestop")) {
+            return Category.ENTERTAINMENT.getDescription();
+        }
+
         return Category.MISC.getDescription();
     }
 }

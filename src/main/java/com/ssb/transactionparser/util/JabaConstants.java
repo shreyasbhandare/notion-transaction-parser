@@ -28,6 +28,7 @@ public class JabaConstants {
         IMMIGRATION("Immigration"),
         RENTERS_INS("Renter's Insurance"),
         PAYCHECK("Paycheck"),
+        ENTERTAINMENT("Entertainment"),
         INTERNAL_PAYMENT("Internal Payment");
 
         private final String desc;
